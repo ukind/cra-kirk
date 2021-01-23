@@ -10,12 +10,13 @@ dependencies:
   react-dom: 17.0.1_react@17.0.1
   react-scripts: 4.0.1_typescript@4.1.3
   typescript: 4.1.3
-  web-vitals: 0.2.4
 devDependencies:
+  '@craco/craco': 6.0.0_react-scripts@4.0.1
   '@types/enzyme': 3.10.8
   '@typescript-eslint/eslint-plugin': 4.14.0_980e7d90d2d08155204a38366bd3b934
   '@typescript-eslint/parser': 4.14.0_eslint@7.18.0+typescript@4.1.3
   '@wojtekmaj/enzyme-adapter-react-17': 0.4.1_ed988ebff08079c40ff9e87e2acc78b3
+  craco-swc: 0.1.0_958940a2393ce5331932c17671f9ad20
   enzyme: 3.11.0
   eslint: 7.18.0
   eslint-config-airbnb: 18.2.1_8b932c4aedefa0fbb298d8c6e2d8003e
@@ -1240,6 +1241,21 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-v9kIhKwjeZThiWrLmj0y17CWoyddASLj9O2yvbZkbvw/N3rWOYy9zkV66ursAoVr0mV15bL8g0c4QZUE6cdDoQ==
+  /@craco/craco/6.0.0_react-scripts@4.0.1:
+    dependencies:
+      cross-spawn: 7.0.3
+      lodash: 4.17.20
+      react-scripts: 4.0.1_typescript@4.1.3
+      semver: 7.3.4
+      webpack-merge: 4.2.2
+    dev: true
+    engines:
+      node: '>=6'
+    hasBin: true
+    peerDependencies:
+      react-scripts: ^4.0.0
+    resolution:
+      integrity: sha512-NSgcGqTlQ+XTBJ/AhE0ngdfab5xIyx/06yrRPkvDH02V90ejrL6bSM54k3+h3OjGE/SO7nmF1MqfFwemPo8kVw==
   /@csstools/convert-colors/1.4.0:
     dev: false
     engines:
@@ -1569,6 +1585,17 @@ packages:
       node: '>= 10.14.2'
     resolution:
       integrity: sha512-fC6QCp7Sc5sX6g8Tvbmj4XUTbyrik0akgRy03yjXbQaBWWNWGE7SGtJk98m0N8nzegD/7SggrUlivxo5ax4KWQ==
+  /@napi-rs/triples/1.0.2:
+    dev: true
+    resolution:
+      integrity: sha512-EL3SiX43m9poFSnhDx4d4fn9SSaqyO2rHsCNhETi9bWPmjXK3uPJ0QpPFtx39FEdHcz1vJmsiW41kqc0AgvtzQ==
+  /@node-rs/helper/1.0.0:
+    dependencies:
+      '@napi-rs/triples': 1.0.2
+      tslib: 2.1.0
+    dev: true
+    resolution:
+      integrity: sha512-B4CSMHCuYPqai3LMsRTXyvBEP24YRnCZUUsDPYkgFD6tFA+q43rLkaEzsnTJTKJq5ZnJ4n5YJpJwEz7Xn8+0vg==
   /@nodelib/fs.scandir/2.1.4:
     dependencies:
       '@nodelib/fs.stat': 2.0.4
@@ -1809,6 +1836,117 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-LjepnS/BSAvelnOnnzr6Gg0GcpLmnZ9ThGFK5WJtm1xOqdBE/1IACZU7MMdVzjyUkfFqGz87eRE4hFaSLiUwYg==
+  /@swc/core-android-arm64/1.2.45:
+    cpu:
+      - arm64
+    dev: true
+    engines:
+      node: '>=10'
+    optional: true
+    os:
+      - android
+    resolution:
+      integrity: sha512-/ObJF6gpnqNvaEDWTkaq5SQtsg4b7MixgJghkP/z26S1lVILyDJTfZn8qW80XdfBF5Xz0Z9OG0fjZDkENAKLLg==
+  /@swc/core-darwin-arm64/1.2.45:
+    cpu:
+      - arm64
+    dev: true
+    engines:
+      node: '>=10'
+    optional: true
+    os:
+      - darwin
+    resolution:
+      integrity: sha512-ZWiVfiNNZdZBQRBfMZ1O0J4LrvHWegISnPXW8GGrNQqvlfgOJowRVHWu4XEanxdBD5XURW9XUW0IAKJwwJrvXg==
+  /@swc/core-darwin-x64/1.2.45:
+    cpu:
+      - x64
+    dev: true
+    engines:
+      node: '>=10'
+    optional: true
+    os:
+      - darwin
+    resolution:
+      integrity: sha512-G5yKhN7QkKnr5L6r2bK3wpBRJd1Cete6tDDgj5mdERdQCMvkB+JfBkDFGLJdqj1uskAtgkbTksvjTQQhZNJ/bA==
+  /@swc/core-linux-arm-gnueabihf/1.2.45:
+    cpu:
+      - arm
+    dev: true
+    engines:
+      node: '>=10'
+    optional: true
+    os:
+      - linux
+    resolution:
+      integrity: sha512-rhwR+sleyr+/U+STJXQpBHbP/tLAEQZDMItSopwKVu9Xt9jy36mvLC8GuHij2nudVcugDlmyr5u/OvH3D+vLjw==
+  /@swc/core-linux-arm64-gnu/1.2.45:
+    cpu:
+      - arm64
+    dev: true
+    engines:
+      node: '>=10'
+    optional: true
+    os:
+      - linux
+    resolution:
+      integrity: sha512-msljjODecBr3Gy7D5+pWFLTtydGNboVIDvuzZryN+YhHdWXiZUTyUvWx1oUdk57AAUr2WId7chWppj1/Ffbokw==
+  /@swc/core-linux-x64-gnu/1.2.45:
+    cpu:
+      - x64
+    dev: true
+    engines:
+      node: '>=10'
+    optional: true
+    os:
+      - linux
+    resolution:
+      integrity: sha512-JanmdgQXasdO0k1RsrCpZLuVyfMy7M+LhdOE+3y1YUSoqRzw4VAImA/qNIi+y70AdwlSrOmdPbyz834oJxB/pQ==
+  /@swc/core-linux-x64-musl/1.2.45:
+    cpu:
+      - x64
+    dev: true
+    engines:
+      node: '>=10'
+    optional: true
+    os:
+      - linux
+    resolution:
+      integrity: sha512-p9UuVK57O1N6s4rkecjGSe8qofR+xzYiUOttvUUi5tq2ylRTCGeEe5XaigxLSZBSx39u3QAwYNSc7A7miLjP9Q==
+  /@swc/core-win32-x64-msvc/1.2.45:
+    cpu:
+      - x64
+    dev: true
+    engines:
+      node: '>=10'
+    optional: true
+    os:
+      - win32
+    resolution:
+      integrity: sha512-DpapCufNXmErmlinyq5RK2BXjIZM65Y6SGUjS9v5WDDven4vpN8IbzkcfJMVNDAvlnx5KO/PHDAaoFptLdHq4Q==
+  /@swc/core/1.2.45:
+    dependencies:
+      '@node-rs/helper': 1.0.0
+    dev: true
+    engines:
+      node: '>=10'
+    optionalDependencies:
+      '@swc/core-android-arm64': 1.2.45
+      '@swc/core-darwin-arm64': 1.2.45
+      '@swc/core-darwin-x64': 1.2.45
+      '@swc/core-linux-arm-gnueabihf': 1.2.45
+      '@swc/core-linux-arm64-gnu': 1.2.45
+      '@swc/core-linux-x64-gnu': 1.2.45
+      '@swc/core-linux-x64-musl': 1.2.45
+      '@swc/core-win32-x64-msvc': 1.2.45
+    resolution:
+      integrity: sha512-1aQe4tMvF9CZvlPXScMJVl3iz/yvRiJwda0K1URIPKdMVvE6tGn81+ntM0yXCUBzX03c1M+0IEcWloc12/Ucjw==
+  /@swc/jest/0.1.2:
+    dependencies:
+      '@swc/core': 1.2.45
+    dev: true
+    resolution:
+      integrity: sha512-14ju3wkSsTeKFivYzH222j4/y5UQWY5Wk9fOvPit6wyuZNyo4fP6AVYWwVzogmqQNe06IMs+aPJGQ3FbErRZjQ==
   /@testing-library/dom/7.29.4:
     dependencies:
       '@babel/code-frame': 7.12.11
@@ -3103,7 +3241,6 @@ packages:
     resolution:
       integrity: sha512-+e/UqUzwmzJamNF50tBV6tZPTORow7gQ96iFow+8b562OdMpEK0BcJEq2OSPEDmAbSMBQ7PKZ87ubFkgxpYWgw==
   /big.js/5.2.2:
-    dev: false
     resolution:
       integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==
   /binary-extensions/1.13.1:
@@ -3921,6 +4058,19 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-pondGvTuVYDk++upghXJabWzL6Kxu6f26ljFw64Swq9v6sQPUL3EUlVDV56diOjpCayKihL6hVe8exIACU4XcA==
+  /craco-swc/0.1.0_958940a2393ce5331932c17671f9ad20:
+    dependencies:
+      '@craco/craco': 6.0.0_react-scripts@4.0.1
+      '@swc/core': 1.2.45
+      '@swc/jest': 0.1.2
+      react-scripts: 4.0.1_typescript@4.1.3
+      swc-loader: 0.1.12
+    dev: true
+    peerDependencies:
+      '@craco/craco': ^5.5.0
+      react-scripts: ^3.3.0
+    resolution:
+      integrity: sha512-RsvT4BZ1djRArMa3fBXSbCZGkc4ruCk8oCBJkJuUAX+ExKNYixrcTRBjX3SRT+MSZzp6yUxe7/4YoTWfho2x6Q==
   /create-ecdh/4.0.4:
     dependencies:
       bn.js: 4.11.9
@@ -4697,7 +4847,6 @@ packages:
     resolution:
       integrity: sha1-TapNnbAPmBmIDHn6RXrlsJof04k=
   /emojis-list/3.0.0:
-    dev: false
     engines:
       node: '>= 4'
     resolution:
@@ -7789,7 +7938,6 @@ packages:
       big.js: 5.2.2
       emojis-list: 3.0.0
       json5: 2.1.3
-    dev: false
     engines:
       node: '>=8.9.0'
     resolution:
@@ -7929,7 +8077,6 @@ packages:
   /lru-cache/6.0.0:
     dependencies:
       yallist: 4.0.0
-    dev: false
     engines:
       node: '>=10'
     resolution:
@@ -10768,6 +10915,15 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==
+  /semver/7.3.4:
+    dependencies:
+      lru-cache: 6.0.0
+    dev: true
+    engines:
+      node: '>=10'
+    hasBin: true
+    resolution:
+      integrity: sha512-tCfb2WLjqFAtXn4KEdxIhalnRtoKFN7nAwj0B3ZXCbQloV2tq5eDbcTmT68JJD3nRJq24/XgxtQKFIpQdtvmVw==
   /send/0.17.1:
     dependencies:
       debug: 2.6.9
@@ -11430,6 +11586,15 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-yhy/sQYxR5BkC98CY7o31VGsg014AKLEPxdfhora76l36hD9Rdy5NZA/Ocn6yayNPgSamYdtX2rFJdcv07AYVw==
+  /swc-loader/0.1.12:
+    dependencies:
+      '@swc/core': 1.2.45
+      loader-utils: 2.0.0
+    dev: true
+    peerDependencies:
+      webpack: '>=2'
+    resolution:
+      integrity: sha512-DFV2PCxJGaym9S/K2xhUp/sVsTSeNNoPAvjqM/W3eZ9tVteUthjDOFjkQ7wo9TPemskKVBLQ8cTCAqoitXB3GQ==
   /symbol-tree/3.2.4:
     resolution:
       integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
@@ -11728,7 +11893,6 @@ packages:
     resolution:
       integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
   /tslib/2.1.0:
-    dev: false
     resolution:
       integrity: sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
   /tsutils/3.19.1_typescript@4.1.3:
@@ -12104,10 +12268,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==
-  /web-vitals/0.2.4:
-    dev: false
-    resolution:
-      integrity: sha512-6BjspCO9VriYy12z356nL6JBS0GYeEcA457YyRzD+dD6XYCQ75NKhcOHUMHentOE7OcVCIXXDvOm0jKFfQG2Gg==
   /webidl-conversions/4.0.2:
     dev: true
     resolution:
@@ -12208,6 +12368,12 @@ packages:
       webpack: 2 || 3 || 4
     resolution:
       integrity: sha512-9S6YyKKKh/Oz/eryM1RyLVDVmy3NSPV0JXMRhZ18fJsq+AwGxUY34X54VNwkzYcEmEkDwNxuEOboCZEebJXBAQ==
+  /webpack-merge/4.2.2:
+    dependencies:
+      lodash: 4.17.20
+    dev: true
+    resolution:
+      integrity: sha512-TUE1UGoTX2Cd42j3krGYqObZbOD+xF7u28WB7tfUordytSjbWTIjK/8V0amkBfTYN4/pB/GIDlJZZ657BGG19g==
   /webpack-sources/1.4.3:
     dependencies:
       source-list-map: 2.0.1
@@ -12576,7 +12742,6 @@ packages:
     resolution:
       integrity: sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==
   /yallist/4.0.0:
-    dev: false
     resolution:
       integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
   /yaml/1.10.0:
@@ -12645,6 +12810,7 @@ packages:
     resolution:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 specifiers:
+  '@craco/craco': ^6.0.0
   '@testing-library/jest-dom': ^5.11.4
   '@testing-library/react': ^11.1.0
   '@testing-library/user-event': ^12.1.10
@@ -12656,6 +12822,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^4.4.1
   '@typescript-eslint/parser': ^4.14.0
   '@wojtekmaj/enzyme-adapter-react-17': ^0.4.1
+  craco-swc: ^0.1.0
   enzyme: ^3.11.0
   eslint: ^7.18.0
   eslint-config-airbnb: ^18.2.1
@@ -12673,4 +12840,3 @@ specifiers:
   react-scripts: 4.0.1
   ts-jest: ^26.4.4
   typescript: ^4.0.3
-  web-vitals: ^0.2.4
