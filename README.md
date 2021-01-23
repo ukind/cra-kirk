@@ -4,6 +4,7 @@ A boilerplate for creating react web app with the following features:
  - ESlint (extend to Airbnb, Airbnb-ts, Jest, React, typechecking)
  - Unit test (Jest, Enzyme)
  - Customizable webpack settings without eject (thanks to craco)
+ - Use PNPM package manager
  - use Rust (SWC) as compiler (replace babel-loader) for faster build time
 
  # How To use
