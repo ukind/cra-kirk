@@ -1,4 +1,4 @@
-const CracoSwcPlugin = require("craco-swc");
+const CracoSwcPlugin = require('craco-swc');
 
 module.exports = {
   plugins: [
@@ -7,14 +7,19 @@ module.exports = {
       options: {
         swcLoaderOptions: {
           jsc: {
-            externalHelpers: true,
-            target: "es2015",
+            target: 'es2021',
             parser: {
-              exportDefaultFrom: true,
               syntax: 'typescript',
               tsx: true,
-              decorators: true,
               dynamicImport: true,
+              privateMethod: true,
+              functionBind: true,
+              exportDefaultFrom: true,
+              exportNamespaceFrom: true,
+              decorators: true,
+              decoratorsBeforeExport: true,
+              topLevelAwait: true,
+              importMeta: true,
             },
           },
         },
